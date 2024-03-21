@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vite",
     "update": "update",
-    "install-force": "--legacy-peer-deps",
-    "build": "vite build",
+    "install-force": "install --legacy-peer-deps",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
