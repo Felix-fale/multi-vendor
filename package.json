@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "update": "npm update",
-    "install-force": "npm install --legacy-peer-deps",
+    "update": "update",
+    "install-force": "--legacy-peer-deps",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
