@@ -4,7 +4,7 @@ import {
   AiOutlineCamera,
   AiOutlineDelete,
 } from "react-icons/ai";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { backend_url, server } from "../../server";
 import styles from "../../styles/styles";
 import { DataGrid } from "@material-ui/data-grid";
@@ -19,7 +19,7 @@ import { RxCross1 } from "react-icons/rx";
 //   updateUserInformation,
 // } from "../../redux/actions/user";
 // import { Country, State } from "country-state-city";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { toast } from "react-toastify";
 import axios from "axios";
 // import { getAllOrdersOfUser } from "../../redux/actions/order";
@@ -33,8 +33,8 @@ function ProfileContent({ active }) {
   const [address1, setAddress1] = useState("");
   const [address2, setAddress2] = useState("");
   const [zipeCode, setZipeCode] = useState("");
-  const [avatar, setAvatar] = useState(null);
-  const dispatch = useDispatch();
+  // const [avatar, setAvatar] = useState(null);
+  // const dispatch = useDispatch();
 
   // useEffect(() => {
   //   if (error) {
@@ -239,7 +239,7 @@ function ProfileContent({ active }) {
 const AllOrders = () => {
   // const { user } = useSelector((state) => state.user);
   // const { orders } = useSelector((state) => state.order);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const orders = [
     {
@@ -345,9 +345,9 @@ const AllOrders = () => {
 };
 
 const AllRefundOrders = () => {
-  const { user } = useSelector((state) => state.user);
-  // const { orders } = useSelector((state) => state.order);
-  const dispatch = useDispatch();
+  // const { user } = useSelector((state) => state.user);
+  // // const { orders } = useSelector((state) => state.order);
+  // const dispatch = useDispatch();
 
   const orders = [
     {
@@ -376,8 +376,8 @@ const AllRefundOrders = () => {
   //   dispatch(getAllOrdersOfUser(user._id));
   // }, []);
 
-  const eligibleOrders =
-    orders && orders.filter((item) => item.status === "Processing refund");
+  // const eligibleOrders =
+  //   orders && orders.filter((item) => item.status === "Processing refund");
 
   const columns = [
     { field: "id", headerName: "Order ID", minWidth: 150, flex: 0.7 },
@@ -456,9 +456,9 @@ const AllRefundOrders = () => {
 };
 
 const TrackOrder = () => {
-  const { user } = useSelector((state) => state.user);
-  // const { orders } = useSelector((state) => state.order);
-  const dispatch = useDispatch();
+  // const { user } = useSelector((state) => state.user);
+  // // const { orders } = useSelector((state) => state.order);
+  // const dispatch = useDispatch();
 
   // useEffect(() => {
   //   dispatch(getAllOrdersOfUser(user._id));
@@ -650,7 +650,7 @@ const Address = () => {
   const [address2, setAddress2] = useState("");
   const [addressType, setAddressType] = useState("");
   const { user } = useSelector((state) => state.user);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const addressTypeData = [
     {
@@ -690,10 +690,10 @@ const Address = () => {
     // }
   };
 
-  const handleDelete = (item) => {
-    const id = item._id;
-    // dispatch(deleteUserAddress(id));
-  };
+  // const handleDelete = (item) => {
+  //   const id = item._id;
+  //   // dispatch(deleteUserAddress(id));
+  // };
 
   return (
     <div className="w-full px-5">
